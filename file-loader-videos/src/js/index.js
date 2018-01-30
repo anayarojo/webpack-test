@@ -1,0 +1,28 @@
+import "../css/estilos.css";
+import message from "./message.js";
+import { lastMessage} from "./message.js";
+import wmsIcono from "../img/wms-icono.png";
+import platziVideo from "../videos/platzi.mp4";
+
+document.write("Probando Web Pack!");
+document.write("<br/>")
+document.write(message.firstMessage);
+lastMessage();
+
+document.write("<br/>")
+
+const img = document.createElement("img");
+img.setAttribute("src", wmsIcono);
+img.setAttribute("width", 60);
+img.setAttribute("height", 60);
+document.body.appendChild(img);
+
+const video = document.createElement("video");
+video.setAttribute("src", platziVideo);
+video.setAttribute("width", 480);
+video.setAttribute("autoplay", true);
+video.setAttribute("controls", true);
+document.body.appendChild(video);
+
+console.log("Probando Webpack!");
+
